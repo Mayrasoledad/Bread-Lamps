@@ -1,0 +1,197 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*GLOBAL STYLES*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:ital,wght@1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f9f4ef;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, 
+h2, 
+h3, 
+h4 {
+    color: #020826;
+}
+
+p {
+    color: gray;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    color: #f25042;
+}
+
+/*styling*/
+
+header {
+    top: 0;
+    position: fixed;
+}
+
+.navigator-list{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    backdrop-filter: blur(4px);
+    
+}
+
+.navigator-list__item {
+    text-transform: uppercase;
+}
+.navigator-list__item a:hover {
+    color: #020826;
+}
+
+.navigator-list__item--icon img{
+    width: 34px;
+}
+
+/*MAIN*/
+
+main {
+    margin-top: 8vh;
+}
+
+.hero {
+    background-image: url("./assets/images/lamparas-elaboradas-pan-japon-japonshop02.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin: 0 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 8px;
+}
+.hero h1{
+    padding: 10px;
+}
+
+.hero p{
+    text-align: justify;
+}
+
+.lamp-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.lamp-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 20px;
+}
+
+.lamp-gallery__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    margin: 20px 20px;
+}
+
+.lamp-gallery__item div {
+    width: 300px;
+    height: 400px;
+    border: solid black 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 8px;
+}
+
+.lamp-gallery__item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.lamp-gallery__item P {
+    margin: 4px;
+}
+
+.lamp-gallery__item:hover {
+    cursor: pointer;
+    filter: grayscale(100%);
+    transform: rotate(2deg);
+    transition-duration: 1s;
+}
+
+
+
+.contact-title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+.contact a::before {
+    content: "📨"; /*con tecla windows y punto se abren los emojis*/
+    padding-right: 4px;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8c7851;
+    margin-top: 14px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 14px;
+}
+
+.social__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.social__item img{
+    width: 40%;
+}
+
+footer p {
+    padding: 10px;
+}
